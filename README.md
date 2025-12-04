@@ -9,24 +9,33 @@ Cat-Dog-Panda Image Classification using ResNet18
 This project demonstrates image classification using a pretrained ResNet18 model on a custom dataset of cats, dogs, and pandas.
 The model is fine-tuned, evaluated, and visualized with confusion matrices and prediction outputs.
 
-📘 Project Overview
+## Project Overview
 
 This repository contains a complete PyTorch implementation of a deep learning model that classifies images into three categories:
+
 🐱 Cat
+
 🐶 Dog
+
 🐼 Panda
+
 It uses transfer learning from a pretrained ResNet18 model, making it highly accurate even with limited data.
 
-🧠 Features
+## Features
 
 ✅ Pretrained ResNet18 backbone with fine-tuned classifier
+
 ✅ Data augmentation (rotation, flip, normalization)
+
 ✅ Accuracy and confusion matrix visualization
+
 ✅ Individual prediction display with confidence
+
 ✅ Device optimization (CUDA / CPU auto-detection)
+
 ✅ Model saving and loading support
 
-🗂️ Dataset Structure
+## Dataset Structure
 Your dataset folder should be organized as follows:
 ```
 Cat-Dog_Pandas/
@@ -41,31 +50,31 @@ Cat-Dog_Pandas/
     ├── dog/
     └── panda/
 ```
-🖥️ Environment Setup
+## Environment Setup
 
 Python version: 3.9+
 PyTorch version: 2.x
 CUDA: Enabled if GPU available
 
-🖼️ Data Preprocessing
+## Data Preprocessing
 
 Resize images to 224x224
 Apply data augmentation for training: random rotation, horizontal flip
 Normalize using ImageNet mean and std
 
-🧠 Model
+## Model
 
 Pre-trained model: ResNet18 (ImageNet weights)
 Freeze convolutional layers
 Replace the fully connected layer
 
-🖼️ Example Visualization
+## Example Visualization
 Confusion Matrix
 Displays classification performance across classes.
 Prediction Output
 Shows model predictions with true vs predicted labels.
 
-⚙️ Training
+## Training
 
 Loss function: CrossEntropyLoss
 Optimizer: Adam, learning rate = 0.001
@@ -73,7 +82,7 @@ Epochs: 10
 
 Batch size: 16
 
-📊 Evaluation & Visualization
+## Evaluation & Visualization
 
 Compute test accuracy on the test dataset
 Plot CrossEntropyLoss vs Epochs for training and validation
@@ -101,7 +110,7 @@ Run the Jupyter Notebook:
 jupyter notebook notebooks/cat_dog_panda_transfer_learning.ipynb
 
 
-Prediction:
+## Prediction:
 
 Place your images in any folder, e.g., Downloads/.
 The notebook has a function predict_and_show(image_path) to display the image with predicted label.
