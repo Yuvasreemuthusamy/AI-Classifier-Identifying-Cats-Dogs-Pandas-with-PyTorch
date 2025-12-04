@@ -1,0 +1,10 @@
+torch --> 2.8.0+cpu (version)
+torchvision
+torchaudio
+numpy
+matplotlib
+pandas
+scikit-learn
+tqdm
+jupyter
+Dataset --> cat-dog-panda dataset
